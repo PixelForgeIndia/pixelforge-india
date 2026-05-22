@@ -1,4 +1,5 @@
 import AnimatedSection from "./AnimatedSection"
+import WorkCategories from "./WorkCategories"
 
 
 function Navbar() {
@@ -19,8 +20,10 @@ function Navbar() {
         <div className="flex gap-6 text-sm md:text-base">
           <a href="#services" className="hover:text-cyan-400">Services</a>
           <a href="#portfolio" className="hover:text-cyan-400">Projects</a>
+          <a href="#work-categories" className="hover:text-cyan-400">Our Work</a>
           <a href="#team" className="hover:text-cyan-400">Team</a>
           <a href="#reviews" className="hover:text-cyan-400">Reviews</a>
+          <a href="#pricing" className="hover:text-cyan-400 transition">Pricing</a>
           <a href="#contact" className="hover:text-cyan-400">Contact</a>
         </div>
       </div>

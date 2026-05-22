@@ -2,57 +2,89 @@ import AnimatedSection from "./AnimatedSection"
 
 function Contact() {
   return (
-     <AnimatedSection>
+    <AnimatedSection>
+      <section id="contact" className="py-24 px-6 bg-[#0a0f1f] text-white">
 
-    <section id="contact" className="py-24 px-6">
-      <div className="max-w-3xl mx-auto text-center">
-
-        <h2 className="text-4xl font-bold mb-8">
+        <h2 className="text-4xl font-bold text-center mb-4">
           Contact Us
         </h2>
 
-        <p className="text-gray-300 mb-10">
-          Let's build your business website.
+        <p className="text-gray-400 text-center mb-12">
+          Let’s build your business website together
         </p>
 
-        <form
-          action="https://formsubmit.co/pixelforgeindia24@gmail.com"
-          method="POST"
-          className="flex flex-col gap-4"
-          >
+        {/* SPLIT CONTAINER */}
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10">
 
-          <input
-            type="text"
-            name="name"
-            placeholder="Your Name"
-            required
-            className="p-4 rounded-xl bg-[#111827] border border-gray-700 outline-none"
-          />
+          {/* LEFT SIDE - FORM */}
+          <div className="bg-[#111827] p-8 rounded-2xl border border-gray-800">
 
-          <input
-            type="email"
-            name="email"
-            placeholder="Your Email"
-            required
-            className="p-4 rounded-xl bg-[#111827] border border-gray-700 outline-none"
-            />
+            <h3 className="text-2xl font-bold mb-6">
+              Send Message
+            </h3>
 
-          <textarea
-            name="message"
-            rows="5"
-            placeholder="Your Message"
-            required
-            className="p-4 rounded-xl bg-[#111827] border border-gray-700 outline-none"
-            ></textarea>
+            <form
+              action="https://formsubmit.co/pixelforgeindia24@gmail.com"
+              method="POST"
+              className="flex flex-col gap-4"
+            >
 
-          <button className="bg-cyan-400 text-black py-4 rounded-xl font-bold hover:scale-105 transition">
-            Send Message
-          </button>
+              <input
+                type="text"
+                name="name"
+                placeholder="Your Name"
+                required
+                className="p-4 rounded-xl bg-[#0a0f1f] border border-gray-700 outline-none"
+              />
 
-        </form>
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+                className="p-4 rounded-xl bg-[#0a0f1f] border border-gray-700 outline-none"
+              />
 
-      </div>
-    </section>
+              <textarea
+                name="message"
+                rows="5"
+                placeholder="Your Message"
+                required
+                className="p-4 rounded-xl bg-[#0a0f1f] border border-gray-700 outline-none"
+              ></textarea>
+
+              <button className="bg-cyan-400 text-black py-3 rounded-xl font-bold hover:scale-105 transition">
+                Send Message →
+              </button>
+
+            </form>
+
+          </div>
+
+          {/* RIGHT SIDE - WHATSAPP ONLY */}
+          <div className="bg-[#111827] p-8 rounded-2xl border border-gray-800 flex flex-col justify-center items-center text-center">
+
+            <h3 className="text-2xl font-bold mb-4 text-green-400">
+              Chat on WhatsApp
+            </h3>
+
+            <p className="text-gray-400 mb-8">
+              Get instant reply for your project requirement. We usually respond within minutes.
+            </p>
+
+            <a
+              href="https://wa.me/919730119052"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-green-500 text-white px-8 py-3 rounded-xl font-bold hover:scale-105 transition"
+            >
+              Open WhatsApp →
+            </a>
+
+          </div>
+
+        </div>
+      </section>
     </AnimatedSection>
   )
 }
