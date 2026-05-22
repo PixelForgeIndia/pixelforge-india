@@ -6,6 +6,7 @@ import Reviews from './components/Reviews'
 import About from './components/About'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import Team from "./components/Team"
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Hero />
       <Services />
       <Portfolio />
+      <Team/>
       <Reviews />
       <About />
       <Contact />
