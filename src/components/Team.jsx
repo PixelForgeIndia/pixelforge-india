@@ -58,6 +58,12 @@ function Team() {
               <h4 className="text-cyan-400 font-bold mb-3 text-xl">
                 Expertise
               </h4>
+              <a
+                  href="/resume/amit-resume.pdf"
+                  target="_blank"
+                  className="inline-block mt-8 bg-cyan-400 text-black px-6 py-3 my-3 rounded-xl font-bold hover:scale-105 transition">
+                  View Resume
+                </a>
 
               <div className="flex flex-wrap gap-3">
 
@@ -130,6 +136,16 @@ function Team() {
               <h4 className="text-purple-400 font-bold mb-3 text-xl">
                 Expertise
               </h4>
+                <div className="pt-6">
+                  <a
+                    href="/resume/tejas-resume.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block bg-purple-500 my-3 hover:bg-purple-400 text-black font-semibold px-6 py-3 rounded-xl transition duration-300">
+                    View Resume
+                  </a>
+                </div>
+              
 
               <div className="flex flex-wrap gap-3">
 
