@@ -1,5 +1,10 @@
+import AnimatedSection from "./AnimatedSection"
+
+
 function Navbar() {
   return (
+     <AnimatedSection>
+
     <nav className="fixed w-full top-0 bg-black/40 backdrop-blur-md z-50 border-b border-gray-800">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
         <div className="flex items-center gap-3">
@@ -19,6 +24,7 @@ function Navbar() {
         </div>
       </div>
     </nav>
+  </AnimatedSection>
   )
 }
 

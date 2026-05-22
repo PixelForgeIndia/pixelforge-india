@@ -1,9 +1,13 @@
+import AnimatedSection from "./AnimatedSection"
+
 function Team() {
   return (
+     <AnimatedSection>
+
     <section
       id="team"
       className="py-24 px-6 bg-gradient-to-b from-black to-[#0f172a]"
-    >
+      >
       <h2 className="text-5xl font-bold text-center mb-5">
         Meet The Team
       </h2>
@@ -25,7 +29,7 @@ function Team() {
               src="/team/amit.jpg"
               alt="Amit Nagore"
               className="w-40 h-40 rounded-full object-cover border-4 border-cyan-400 shadow-lg shadow-cyan-500/20"
-            />
+              />
 
             <h3 className="text-3xl font-bold mt-6 text-cyan-400">
               Amit Nagore
@@ -103,7 +107,7 @@ function Team() {
               src="/team/tejas.jpg"
               alt="Tejas Bhise"
               className="w-40 h-40 rounded-full object-cover border-4 border-purple-500 shadow-lg shadow-purple-500/20"
-            />
+              />
 
             <h3 className="text-3xl font-bold mt-6 text-purple-400">
               Tejas Bhise
@@ -178,6 +182,7 @@ function Team() {
 
       </div>
     </section>
+    </AnimatedSection>
   )
 }
 

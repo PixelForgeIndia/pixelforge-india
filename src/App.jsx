@@ -10,7 +10,7 @@ import Team from "./components/Team"
 
 function App() {
   return (
-    <>
+     <div>
       <Navbar />
       <Hero />
       <Services />
@@ -20,7 +20,7 @@ function App() {
       <About />
       <Contact />
       <Footer />
-    </>
+    </div>
   )
 }
 

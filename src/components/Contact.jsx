@@ -1,5 +1,9 @@
+import AnimatedSection from "./AnimatedSection"
+
 function Contact() {
   return (
+     <AnimatedSection>
+
     <section id="contact" className="py-24 px-6">
       <div className="max-w-3xl mx-auto text-center">
 
@@ -15,7 +19,7 @@ function Contact() {
           action="https://formsubmit.co/pixelforgeindia24@gmail.com"
           method="POST"
           className="flex flex-col gap-4"
-        >
+          >
 
           <input
             type="text"
@@ -31,7 +35,7 @@ function Contact() {
             placeholder="Your Email"
             required
             className="p-4 rounded-xl bg-[#111827] border border-gray-700 outline-none"
-          />
+            />
 
           <textarea
             name="message"
@@ -39,7 +43,7 @@ function Contact() {
             placeholder="Your Message"
             required
             className="p-4 rounded-xl bg-[#111827] border border-gray-700 outline-none"
-          ></textarea>
+            ></textarea>
 
           <button className="bg-cyan-400 text-black py-4 rounded-xl font-bold hover:scale-105 transition">
             Send Message
@@ -49,6 +53,7 @@ function Contact() {
 
       </div>
     </section>
+    </AnimatedSection>
   )
 }
 

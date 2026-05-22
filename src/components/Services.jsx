@@ -1,3 +1,5 @@
+import AnimatedSection from "./AnimatedSection"
+
 const services = [
   "Gym Websites",
   "Hotel Websites",
@@ -9,6 +11,7 @@ const services = [
 
 function Services() {
   return (
+  <AnimatedSection>
     <section id="services" className="py-24 px-6">
       <h2 className="text-4xl font-bold text-center mb-14">
         Our Services
@@ -31,6 +34,7 @@ function Services() {
         ))}
       </div>
     </section>
+    </AnimatedSection>
   )
 }
 

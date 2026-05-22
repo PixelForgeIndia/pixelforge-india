@@ -1,5 +1,9 @@
+import AnimatedSection from "./AnimatedSection"
+
 function About() {
   return (
+     <AnimatedSection>
+
     <section className="py-24 px-6 bg-[#0a0f1f]">
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-4xl font-bold mb-8">
@@ -14,6 +18,7 @@ function About() {
         </p>
       </div>
     </section>
+    </AnimatedSection>
   )
 }
 
